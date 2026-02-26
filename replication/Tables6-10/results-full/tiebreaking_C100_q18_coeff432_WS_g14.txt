@@ -1,0 +1,4 @@
+g1 =_d g4: 0.577000 
+proportion of matches (g1, 1/3,1/2,1): 0.999611, 0.000389, 0.000000 
+proportion of matches (g4, 1/3,1/2,1): 0.992528, 0.007472, 0.000000 
+Running time: 33333.513755 

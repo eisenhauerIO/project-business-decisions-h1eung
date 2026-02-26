@@ -1,0 +1,2 @@
+Y_\alpha =_d Y_\beta (p-values for q=5,10,20): 1.000, 1.000, 0.152
+Y_\beta =_d Y_\gamma (p-values for q=5,10,20): 0.062, 0.007, 0.074

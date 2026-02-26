@@ -1,0 +1,7 @@
+name: my-virtenv-py38
+channels:
+  - defaults
+dependencies:
+  - python=3.8.19
+  - pip=24.2
+prefix: /home/hgz5390/.conda/envs/my-virtenv-py38

@@ -1,0 +1,10 @@
+H0:g_3 =_d g_4 (Erdos-Renyi(0.1)), C=20, q=4, U in [-1.0,1.0]: 96.7 
+H0:g_3 =_d g_4 (Erdos-Renyi(0.1)), C=20, q=5, U in [-1.0,1.0]: 94.1 
+H0:g_3 =_d g_4 (Erdos-Renyi(0.1)), C=20, q=6, U in [-1.0,1.0]: 93.8 
+H0:g_3 =_d g_4 (Erdos-Renyi(0.1)), C=20, q=7, U in [-1.0,1.0]: 90.5 
+H0:g_3 =_d g_4 (Erdos-Renyi(0.1)), C=20, q=8, U in [-1.0,1.0]: 90.4 
+H0:g_3 =_d g_4 (Random Geometric(0.1)), C=20, q=5, U in [-1.0,1.0]: 81.9 
+H0:g_3 =_d g_4 (Random Geometric(0.1)), C=20, q=6, U in [-1.0,1.0]: 81.7 
+H0:g_3 =_d g_4 (Random Geometric(0.1)), C=20, q=7, U in [-1.0,1.0]: 70.0 
+H0:g_3 =_d g_4 (Random Geometric(0.1)), C=20, q=8, U in [-1.0,1.0]: 62.5 
+H0:g_3 =_d g_4 (Random Geometric(0.1)), C=20, q=9, U in [-1.0,1.0]: 57.9 

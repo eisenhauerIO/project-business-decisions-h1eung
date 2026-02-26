@@ -1,0 +1,12 @@
+\begin{table}[htbp]
+\centering
+\caption{$p$-values for testing $Y_\alpha =_d Y_\beta$ among 10 different random picks of rooted networks with the same distance to the target rooted network}
+\begin{tabular}{ccccccccccc}
+\toprule
+$q=5$&0.89&0.44&1.00&1.00&1.00&1.00&0.52&0.53&0.90&1.00\\
+$q=10$&1.00&0.60&0.48&1.00&0.60&0.35&0.10&1.00&0.86&0.44\\
+$q=20$&0.44&0.99&1.00&0.30&0.87&0.01&0.37&0.81&0.86&0.28\\
+\bottomrule
+\end{tabular}
+\label{tab:robust_p_knife_fork}
+\end{table}

@@ -1,0 +1,12 @@
+\begin{table}[htbp]
+\centering
+ \caption{$p$-values for testing $Y_\beta =_d Y_\gamma$ among 10 different random picks of rooted networks with the same distance to the target rooted network}
+\begin{tabular}{ccccccccccc}
+\toprule
+$q=5$&0.56&0.16&1.00&0.16&1.00&0.88&0.92&0.02&1.00&0.03\\
+$q=10$&0.12&0.06&0.15&0.02&0.70&0.02&0.10&0.03&0.09&0.02\\
+$q=20$&0.01&0.03&0.01&0.00&0.02&0.09&0.04&0.01&0.03&0.00\\
+\bottomrule
+\end{tabular}
+\label{tab:robust_p_fork_spoon}
+\end{table}

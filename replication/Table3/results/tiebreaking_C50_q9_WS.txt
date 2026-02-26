@@ -1,0 +1,7 @@
+g_3 =_d g_4: 0.503000 
+ g_1 =_d g_2: 0.434500 
+proportion of matches (g3, 1/3,1/2,1): 1.000000, 0.000000, 0.000000 
+proportion of matches (g4, 1/3,1/2,1): 0.437500, 0.461278, 0.101222 
+proportion of matches (g1, 1/3,1/2,1): 0.105889, 0.781500, 0.112611 
+proportion of matches (g2, 1/3,1/2,1): 0.105556, 0.894444, 0.000000 
+Running time: 26595.159633 

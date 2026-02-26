@@ -1,0 +1,7 @@
+name: my-virtenv-py310
+channels:
+  - defaults
+dependencies:
+  - python=3.10.6
+  - pip=24.2
+prefix: /opt/anaconda3

@@ -1,0 +1,4 @@
+g3 =_d g7: 0.075500 
+proportion of matches (g3, 1/3,1/2,1): 0.619800, 0.380200, 0.000000 
+proportion of matches (g7, 1/3,1/2,1): 0.631650, 0.368350, 0.000000 
+Running time: 19112.630357 

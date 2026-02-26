@@ -1,0 +1,10 @@
+H_0: tilde g_1 =_d tilde g_5 (Watts-Strogatz(2,0.3), U in [-4,4], theta=(0,2,0,3,2,1)), C=20, q=5: 5.7 
+H_0: tilde g_3 =_d tilde g_7 (Watts-Strogatz(2,0.3), U in [-4,4], theta=(0,2,0,3,2,1)), C=20, q=7: 5.8 
+H_0: tilde g_5 =_d tilde g_8 (Watts-Strogatz(2,0.3), U in [-4,4], theta=(0,2,0,3,2,1)), C=20, q=6: 10.5 
+H_0: tilde g_1 =_d tilde g_4 (Watts-Strogatz(2,0.3), U in [-4,4], theta=(0,2,0,3,2,1)), C=20, q=8: 7.1 
+H_0: tilde g_1 =_d tilde g_3 (Watts-Strogatz(2,0.3), U in [-4,4], theta=(0,2,0,4,3,2)), C=20, q=6: 46.4 
+H_0: tilde g_5 =_d tilde g_7 (Watts-Strogatz(2,0.3), U in [-4,4], theta=(0,2,0,4,3,2)), C=20, q=8: 63.5 
+H_0: tilde g_1 =_d tilde g_2 (Watts-Strogatz(2,0.3), U in [-4,4], theta=(0,2,0,5,4,3)), C=20, q=9: 96.7 
+H_0: tilde g_5 =_d tilde g_6 (Watts-Strogatz(2,0.3), U in [-4,4], theta=(0,2,0,5,4,3)), C=20, q=5: 84.0 
+H_0: tilde g_1 =_d tilde g_2 (Watts-Strogatz(2,0.3), U in [-4,4], theta=(0,2,0,6,5,4)), C=20, q=6: 94.5 
+H_0: tilde g_1 =_d tilde g_4 (Watts-Strogatz(2,0.3), U in [-4,4], theta=(0,2,0,6,5,4)), C=20, q=6: 40.0 

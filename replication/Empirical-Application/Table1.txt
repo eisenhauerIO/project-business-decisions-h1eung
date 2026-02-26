@@ -1,0 +1,12 @@
+\begin{table}[htbp]
+\centering
+\caption{Summary statistics for the number of households per village}
+\begin{tabular}{cccccccc}
+\toprule
+Total Num. & Mean  & Min & 25\% Quantile & 50\% Quantile & 75\% Quantile & Max \\
+\midrule
+13405&179&70&140&167&218&326\\
+\bottomrule
+\end{tabular}
+\label{tab:summary_stats_app}
+\end{table}
