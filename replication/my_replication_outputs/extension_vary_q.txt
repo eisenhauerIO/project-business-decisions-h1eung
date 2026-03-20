@@ -1,0 +1,21 @@
+Extension: p-values across q values (B=999 permutations, seed=42)
+============================================================
+   q   p(knife=fork)   p(fork=spoon)  sig(fork=spoon)
+------------------------------------------------------------
+   1           1.000           1.000                 
+   2           1.000           0.360                 
+   3           1.000           0.376                 
+   5           1.000           0.130                 
+   8           1.000           0.031                *
+  10           1.000           0.017                *
+  15           0.735           0.022                *
+  20           0.135           0.065                 
+  25           0.094           0.022                *
+  30           0.094           0.017                *
+  35           0.125           0.006                *
+------------------------------------------------------------
+Paper reports: q=5,10,20. * = reject H0 at alpha=0.05.
+Paper's values (approx_perm_rank_degree, seed=19):
+  q=5:  p(knife=fork)=0.597  p(fork=spoon)=0.157
+  q=10: p(knife=fork)=0.432  p(fork=spoon)=0.007
+  q=20: p(knife=fork)=0.432  p(fork=spoon)=0.074

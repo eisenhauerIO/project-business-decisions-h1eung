@@ -1,0 +1,32 @@
+The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
+
+Loading village data ...
+  Loaded 75 villages in 2.6s
+Caching find_NN results (expensive — ~5-10 min) ...
+  Caching find_NN for knife (R1) ...
+    done in 96.7s
+  Caching find_NN for fork  (R2) ...
+    done in 102.6s
+  Caching find_NN for spoon (R3) ...
+    done in 98.2s
+Total caching time: 297.5s
+  n = 75 villages
+
+Running permutation tests (B=999) for 11 q values ...
+  q= 1: p(knife=fork)=1.000  p(fork=spoon)=1.000  [0.0s]
+  q= 2: p(knife=fork)=1.000  p(fork=spoon)=0.360  [0.0s]
+  q= 3: p(knife=fork)=1.000  p(fork=spoon)=0.376  [0.0s]
+  q= 5: p(knife=fork)=1.000  p(fork=spoon)=0.130  [0.0s]
+  q= 8: p(knife=fork)=1.000  p(fork=spoon)=0.031  [0.0s]
+  q=10: p(knife=fork)=1.000  p(fork=spoon)=0.017  [0.0s]
+  q=15: p(knife=fork)=0.735  p(fork=spoon)=0.022  [0.0s]
+  q=20: p(knife=fork)=0.135  p(fork=spoon)=0.065  [0.0s]
+  q=25: p(knife=fork)=0.094  p(fork=spoon)=0.022  [0.0s]
+  q=30: p(knife=fork)=0.094  p(fork=spoon)=0.017  [0.0s]
+  q=35: p(knife=fork)=0.125  p(fork=spoon)=0.006  [0.0s]
+Loop total: 0.3s
+Table saved: /Users/heimanleung/Desktop/Econ481/project-business-decisions-h1eung/replication/my_replication_outputs/extension_vary_q.txt
+Plot  saved: /Users/heimanleung/Desktop/Econ481/project-business-decisions-h1eung/replication/my_replication_outputs/extension_vary_q.eps
+
+Done.
+
