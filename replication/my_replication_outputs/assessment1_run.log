@@ -1,0 +1,192 @@
+[1] Loading village graphs...
+    Loaded 75 village graphs in 2.5s
+[2] Generating target configurations...
+
+[3] Computing distances (Figure 12 setup (max_radius=3))...
+    knife... done (91.5s)
+    fork... done (95.3s)
+    spoon... done (97.5s)
+
+[3] Computing distances (Table 2 estimation setup (max_radius=2))...
+    knife... done (93.4s)
+    fork... done (89.8s)
+    spoon... done (98.4s)
+
+======================================================================
+ASSESSMENT 1: MATCHING QUALITY (psi_g) DIAGNOSTIC
+Auerbach, Guo, Tabord-Meehan (2026) — Empirical Application
+======================================================================
+
+Script: assessment1_matching_quality.py
+Purpose: Quantify nearest-neighbor match quality for knife,
+         fork, and spoon configurations across 75 villages.
+
+[1] Loading village graphs...
+    Loaded 75 village graphs in 2.5s
+    Village sizes: min=70, median=167, max=326
+
+[2] Generating target configurations (seed=0, same as paper)...
+    R1=knife (node 9), R2=fork (node 71), R3=spoon (node 41)
+
+======================================================================
+[3] Distance computation: Figure 12 setup (max_radius=3)
+======================================================================
+
+  Configuration: KNIFE  (max_radius=3)
+  --------------------------------------------------
+  Number of villages: 75
+  Perfect-match distance threshold: 0.2500
+
+  Distance distribution:
+    dist=0.2500   1/75 villages (  1.3%)  [perfect match (agrees through depth 3)]
+    dist=0.3333   4/75 villages (  5.3%)  [agrees through depth 1, differs at depth 2]
+    dist=0.5000  70/75 villages ( 93.3%)  [agrees through depth 0, differs at depth 1]
+
+  % villages with perfect match : 1.3%
+  Mean distance                 : 0.4878
+  Median distance               : 0.5000
+
+  k-th nearest-neighbor distance (sorted best-first):
+    k= 5: dist=0.3333  [agrees through depth 1, differs at depth 2]
+    k=10: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    k=20: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    k=30: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    [runtime: 91.5s]
+
+  Configuration: FORK  (max_radius=3)
+  --------------------------------------------------
+  Number of villages: 75
+  Perfect-match distance threshold: 0.2500
+
+  Distance distribution:
+    dist=0.3333  15/75 villages ( 20.0%)  [agrees through depth 1, differs at depth 2]
+    dist=0.5000  60/75 villages ( 80.0%)  [agrees through depth 0, differs at depth 1]
+
+  % villages with perfect match : 0.0%
+  Mean distance                 : 0.4667
+  Median distance               : 0.5000
+
+  k-th nearest-neighbor distance (sorted best-first):
+    k= 5: dist=0.3333  [agrees through depth 1, differs at depth 2]
+    k=10: dist=0.3333  [agrees through depth 1, differs at depth 2]
+    k=20: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    k=30: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    [runtime: 95.3s]
+
+  Configuration: SPOON  (max_radius=3)
+  --------------------------------------------------
+  Number of villages: 75
+  Perfect-match distance threshold: 0.2500
+
+  Distance distribution:
+    dist=0.5000  73/75 villages ( 97.3%)  [agrees through depth 0, differs at depth 1]
+    dist=1.0000   2/75 villages (  2.7%)  [differ at depth 0 or 1 (no structural overlap)]
+
+  % villages with perfect match : 0.0%
+  Mean distance                 : 0.5133
+  Median distance               : 0.5000
+
+  k-th nearest-neighbor distance (sorted best-first):
+    k= 5: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    k=10: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    k=20: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    k=30: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    [runtime: 97.5s]
+
+======================================================================
+[3] Distance computation: Table 2 estimation setup (max_radius=2)
+======================================================================
+
+  Configuration: KNIFE  (max_radius=2)
+  --------------------------------------------------
+  Number of villages: 75
+  Perfect-match distance threshold: 0.3333
+
+  Distance distribution:
+    dist=0.3333   5/75 villages (  6.7%)  [perfect match (agrees through depth 2)]
+    dist=0.5000  70/75 villages ( 93.3%)  [agrees through depth 0, differs at depth 1]
+
+  % villages with perfect match : 6.7%
+  Mean distance                 : 0.4889
+  Median distance               : 0.5000
+
+  k-th nearest-neighbor distance (sorted best-first):
+    k= 5: dist=0.3333  [perfect match (agrees through depth 2)]
+    k=10: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    k=20: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    k=30: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    [runtime: 93.4s]
+
+  Configuration: FORK  (max_radius=2)
+  --------------------------------------------------
+  Number of villages: 75
+  Perfect-match distance threshold: 0.3333
+
+  Distance distribution:
+    dist=0.3333  15/75 villages ( 20.0%)  [perfect match (agrees through depth 2)]
+    dist=0.5000  60/75 villages ( 80.0%)  [agrees through depth 0, differs at depth 1]
+
+  % villages with perfect match : 20.0%
+  Mean distance                 : 0.4667
+  Median distance               : 0.5000
+
+  k-th nearest-neighbor distance (sorted best-first):
+    k= 5: dist=0.3333  [perfect match (agrees through depth 2)]
+    k=10: dist=0.3333  [perfect match (agrees through depth 2)]
+    k=20: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    k=30: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    [runtime: 89.8s]
+
+  Configuration: SPOON  (max_radius=2)
+  --------------------------------------------------
+  Number of villages: 75
+  Perfect-match distance threshold: 0.3333
+
+  Distance distribution:
+    dist=0.5000  73/75 villages ( 97.3%)  [agrees through depth 0, differs at depth 1]
+    dist=1.0000   2/75 villages (  2.7%)  [differ at depth 0 or 1 (no structural overlap)]
+
+  % villages with perfect match : 0.0%
+  Mean distance                 : 0.5133
+  Median distance               : 0.5000
+
+  k-th nearest-neighbor distance (sorted best-first):
+    k= 5: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    k=10: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    k=20: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    k=30: dist=0.5000  [agrees through depth 0, differs at depth 1]
+    [runtime: 98.4s]
+
+======================================================================
+[4] COMPARISON TABLE — % villages with perfect match
+======================================================================
+
+  Config    max_r=3 (Fig.12)        max_r=2 (Table 2 est.)
+  ------------------------------------------------------------
+  knife       1.3%                     6.7%
+  fork        0.0%                    20.0%
+  spoon       0.0%                     0.0%
+
+======================================================================
+[5] COMPARISON TABLE — k-th nearest-neighbor distance
+    (lower = better match; max_radius=2, Table 2 estimation context)
+======================================================================
+
+  k            knife        fork       spoon
+  ---------------------------------------------
+  5           0.3333      0.3333      0.5000
+  10          0.5000      0.3333      0.5000
+  20          0.5000      0.5000      0.5000
+  30          0.5000      0.5000      0.5000
+
+  Note: distance=1/3 means agrees through depth 1 only (max_radius=2)
+        distance=1/2 means agrees at depth 0 only
+        distance=1   means no structural match even at depth 0 or 1
+        distance=1/3 is the 'perfect match' threshold for max_radius=2
+
+======================================================================
+Total runtime: 568.8s
+======================================================================
+
+Results saved to: /Users/heimanleung/Desktop/Econ481/project-business-decisions-h1eung/replication/my_replication_outputs/assessment1_matching_quality.txt
+
