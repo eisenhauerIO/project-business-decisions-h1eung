@@ -1,0 +1,66 @@
+=== Running empirical application ===
+no change     /opt/anaconda3/condabin/conda
+no change     /opt/anaconda3/bin/conda
+no change     /opt/anaconda3/bin/conda-env
+no change     /opt/anaconda3/bin/activate
+no change     /opt/anaconda3/bin/deactivate
+no change     /opt/anaconda3/etc/profile.d/conda.sh
+no change     /opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /opt/anaconda3/shell/condabin/Conda.psm1
+no change     /opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /opt/anaconda3/lib/python3.11/site-packages/xontrib/conda.xsh
+no change     /opt/anaconda3/etc/profile.d/conda.csh
+no change     /Users/heimanleung/.bash_profile
+No action taken.
+running time (q=20): 261.2851884159609
+p-values (knife v.s. fork, q=20): 0.15215215215215216
+p-values (fork v.s. spoon, q=20): 0.07407407407407407
+running time (q=10): 263.43995558301685
+p-values (knife v.s. fork, q=10): 1.0
+p-values (fork v.s. spoon, q=10): 0.007007007007007007
+running time (q=5): 259.06573604099685
+p-values (knife v.s. fork, q=5): 1.0
+p-values (fork v.s. spoon, q=5): 0.062062062062062065
+Treatment effect (knife v.s. fork, k=10): 0.23770451770451773
+95% CI (knife v.s. fork, k=10): [-0.3474065492713728, 0.8228155846804084]
+Treatment effect (fork v.s. spoon, k=10): 0.6169444444444445
+95% CI (fork v.s. spoon, k=10): [0.20884047719717952, 1.0250484116917096]
+Treatment effect (knife v.s. fork, k=10): 0.23770451770451773
+90% CI (knife v.s. fork, k=10): [-0.2533361688979922, 0.7287452043070279]
+Treatment effect (fork v.s. spoon, k=10): 0.6169444444444445
+90% CI (fork v.s. spoon, k=10): [0.2744527986821494, 0.9594360902067398]
+Treatment effect (knife v.s. fork, k=20): 0.11205261584293824
+95% CI (knife v.s. fork, k=20): [-0.20492198454506955, 0.42902721623094614]
+Treatment effect (fork v.s. spoon, k=20): 0.6933934971838196
+95% CI (fork v.s. spoon, k=20): [0.43958010956904153, 0.9472068847985977]
+Treatment effect (knife v.s. fork, k=20): 0.11205261584293824
+90% CI (knife v.s. fork, k=20): [-0.1539608544107307, 0.3780660860966073]
+Treatment effect (fork v.s. spoon, k=20): 0.6933934971838196
+90% CI (fork v.s. spoon, k=20): [0.48038658762829567, 0.9064004067393436]
+Treatment effect (knife v.s. fork, k=30): 0.06930190385080981
+95% CI (knife v.s. fork, k=30): [-0.15219856077413918, 0.2908023684757588]
+Treatment effect (fork v.s. spoon, k=30): 0.7435129419814327
+95% CI (fork v.s. spoon, k=30): [0.5463154172938652, 0.9407104666690003]
+Treatment effect (knife v.s. fork, k=30): 0.06930190385080981
+90% CI (knife v.s. fork, k=30): [-0.11658714588868452, 0.2551909535903042]
+Treatment effect (fork v.s. spoon, k=30): 0.7435129419814327
+90% CI (fork v.s. spoon, k=30): [0.5780195623751152, 0.9090063215877503]
+[0.8938938938938938, 0.44144144144144143, 1.0, 1.0, 1.0, 1.0, 0.5165165165165165, 0.5335335335335335, 0.8988988988988988, 1.0]
+[0.5575575575575575, 0.15615615615615616, 1.0, 0.15815815815815815, 1.0, 0.8818818818818819, 0.9159159159159159, 0.018018018018018018, 1.0, 0.03203203203203203]
+[1.0, 0.5955955955955956, 0.4794794794794795, 1.0, 0.5955955955955956, 0.3533533533533533, 0.09509509509509509, 1.0, 0.8558558558558559, 0.43843843843843844]
+[0.11911911911911911, 0.055055055055055056, 0.14814814814814814, 0.02102102102102102, 0.6956956956956957, 0.02102102102102102, 0.0960960960960961, 0.02702702702702703, 0.0890890890890891, 0.01901901901901902]
+[0.43743743743743746, 0.992992992992993, 1.0, 0.3033033033033033, 0.8728728728728729, 0.006006006006006006, 0.3743743743743744, 0.8128128128128128, 0.8588588588588588, 0.27927927927927926]
+[0.009009009009009009, 0.03303303303303303, 0.012012012012012012, 0.003003003003003003, 0.016016016016016016, 0.09309309309309309, 0.044044044044044044, 0.006006006006006006, 0.03403403403403403, 0.001001001001001001]
+elapsed time: 10744.078129748988
+=== Copying outputs to my_replication_outputs/empirical_application/ ===
+=== Done. Outputs saved to: /Users/heimanleung/Desktop/Econ481/project-business-decisions-h1eung/replication/my_replication_outputs/empirical_application ===
+Figure10.eps
+Figure11.eps
+Figure12.eps
+Figure8.eps
+Figure9.eps
+Table1.txt
+Table12.txt
+Table13.txt
+Table2.txt
+p-values-empirical-applicaiton.txt

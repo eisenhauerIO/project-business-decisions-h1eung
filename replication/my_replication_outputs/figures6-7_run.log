@@ -1,0 +1,41 @@
+=== Running figures6-7 ===
+no change     /opt/anaconda3/condabin/conda
+no change     /opt/anaconda3/bin/conda
+no change     /opt/anaconda3/bin/conda-env
+no change     /opt/anaconda3/bin/activate
+no change     /opt/anaconda3/bin/deactivate
+no change     /opt/anaconda3/etc/profile.d/conda.sh
+no change     /opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /opt/anaconda3/shell/condabin/Conda.psm1
+no change     /opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /opt/anaconda3/lib/python3.11/site-packages/xontrib/conda.xsh
+no change     /opt/anaconda3/etc/profile.d/conda.csh
+no change     /Users/heimanleung/.bash_profile
+No action taken.
+5.733333333333333
+5.733333333333333
+3.0
+3.0
+3.2
+3.2
+5.733333333333333
+5.733333333333333
+6.333333333333334
+6.333333333333333
+5.733333333333333
+5.733333333333333
+3.0
+6.333333333333334
+3.3333333333333335
+5.333333333333333
+running time: 1743.464141125034
+=== Copying outputs to my_replication_outputs/figures6-7/ ===
+=== Done. Outputs saved to: /Users/heimanleung/Desktop/Econ481/project-business-decisions-h1eung/replication/my_replication_outputs/figures6-7 ===
+Figure6-(a).eps
+Figure6-(b).eps
+Figure6-(c).eps
+Figure6-(d).eps
+Figure6-(d).pdf
+Figure6-(e).eps
+Figure6-(f).eps
+Figure7.eps

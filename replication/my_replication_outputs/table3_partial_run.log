@@ -1,0 +1,22 @@
+=== Running Table 3 partial replication ===
+no change     /opt/anaconda3/condabin/conda
+no change     /opt/anaconda3/bin/conda
+no change     /opt/anaconda3/bin/conda-env
+no change     /opt/anaconda3/bin/activate
+no change     /opt/anaconda3/bin/deactivate
+no change     /opt/anaconda3/etc/profile.d/conda.sh
+no change     /opt/anaconda3/etc/fish/conf.d/conda.fish
+no change     /opt/anaconda3/shell/condabin/Conda.psm1
+no change     /opt/anaconda3/shell/condabin/conda-hook.ps1
+no change     /opt/anaconda3/lib/python3.11/site-packages/xontrib/conda.xsh
+no change     /opt/anaconda3/etc/profile.d/conda.csh
+no change     /Users/heimanleung/.bash_profile
+No action taken.
+T: 20  m: 20
+H0:g_1 =_d g_2 (Erdos-Renyi(0.1)), C=20, q=4: 7.1
+T: 20  m: 20
+H0:g_1 =_d g_2 (Erdos-Renyi(0.1)), C=20, q=7: 10.9
+T: 20  m: 20
+H0:g_3 =_d g_8 (Watts-Strogatz(2,0.2)), C=20, q=5: 5.2
+T: 20  m: 20
+H0:g_3 =_d g_8 (Watts-Strogatz(2,0.2)), C=20, q=8: 4.2
