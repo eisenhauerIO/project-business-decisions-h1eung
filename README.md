@@ -12,6 +12,8 @@ This repository contains a full replication and critical assessment of the empir
 
 **[main_project.ipynb](main_project.ipynb)** — Main submission notebook. Runs top-to-bottom using the `my-virtenv-py310` conda environment.
 
+
+
 ## Analysis Sections
 
 - **Replication Results** — Exact replication of Tables 1, 2, 12, 13 and Figures 6–12; all outputs match byte-for-byte.
@@ -21,6 +23,10 @@ This repository contains a full replication and critical assessment of the empir
 - **Extension 1: P-values Across Extended q Range** — Sweeps q ∈ {1,…,35} and finds fork=spoon significant at 6/11 values, but with a notable local dip at q=20 explained by the degenerate spoon matching.
 - **Extension 2: Full Monte Carlo over Tie-Breaking Seeds** — Runs 1000 random seeds and finds the test rejects at α=0.05 only 33.7% of the time at q=10; the paper's headline p=0.007 sits at the 6.1th percentile of the seed distribution.
 
+## Files
+
+- **[replication/](replication/)** — Original replication package from the paper, including all source scripts, data, and pre-computed outputs from Auerbach et al. (2026).
+- **[replication/my_replication_outputs/](replication/my_replication_outputs/)** — All replication outputs and original analysis files produced for this project (tables, figures, logs, and extension results).
+
 ---
 
-*Reference example notebook (`project.ipynb`) by [Annica Gehlen](https://github.com/amageh), OSE Data Science 2019.*
