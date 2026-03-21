@@ -1,15 +1,15 @@
 The PostScript backend does not support transparency; partially transparent artists will be rendered opaque.
 
 Loading village data ...
-  Loaded 75 villages in 2.6s
+  Loaded 75 villages in 3.0s
 Caching find_NN results (expensive — ~5-10 min) ...
   Caching find_NN for knife (R1) ...
-    done in 96.7s
+    done in 108.5s
   Caching find_NN for fork  (R2) ...
-    done in 102.6s
+    done in 105.2s
   Caching find_NN for spoon (R3) ...
-    done in 98.2s
-Total caching time: 297.5s
+    done in 108.4s
+Total caching time: 322.1s
   n = 75 villages
 
 Running permutation tests (B=999) for 11 q values ...

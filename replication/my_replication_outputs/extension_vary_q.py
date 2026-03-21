@@ -99,13 +99,21 @@ class root_network(object):
 
 
 def r_network_distance(R1, R2, max_radius, min_radius=0):
+    """Exact copy of original — includes initial min_radius check for find_NN pruning."""
+    R_10 = R1.root_nbhd(min_radius)
+    R_20 = R2.root_nbhd(min_radius)
+    if r_is_isomorphic(R_10, R_20) == False:
+        return 1
     for d in range(min_radius + 1, max_radius + 2):
         if d == max_radius + 1:
-            return 1 / (max_radius + 1)
-        R1_nbhd = R1.root_nbhd(d)
-        R2_nbhd = R2.root_nbhd(d)
-        if r_is_isomorphic(R1_nbhd, R2_nbhd) == False:
             return 1 / d
+        else:
+            R_1d = R1.root_nbhd(d)
+            R_2d = R2.root_nbhd(d)
+            if r_is_isomorphic(R_1d, R_2d) == False:
+                return 1 / d
+            else:
+                continue
     return 1 / (max_radius + 1)
 
 
