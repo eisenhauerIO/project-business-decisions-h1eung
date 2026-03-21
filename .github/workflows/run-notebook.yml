@@ -29,4 +29,4 @@ jobs:
       - name: Run notebook
         shell: micromamba-shell {0}
         run: |
-          pytest --nbmake project.ipynb
+          pytest --nbmake main_project.ipynb
