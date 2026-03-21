@@ -2,10 +2,25 @@
 [![Run Notebook](https://github.com/eisenhauerIO/projects-businss-decisions/actions/workflows/run-notebook.yml/badge.svg)](https://github.com/eisenhauerIO/projects-businss-decisions/actions/workflows/run-notebook.yml)
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
-## Project Example
+## Replication Project: Auerbach, Guo & Tabord-Meehan (2026)
 
-The notebook project.ipynb contains an example project by [Annica Gehlen](https://github.com/amageh) from the 2019 iteration of the [OSE data science](https://github.com/OpenSourceEconomics/ose-course-data-science) class at Bonn University. It replicates the results from the following paper:
+**Paper:** Auerbach, E., Guo, Y., & Tabord-Meehan, M. (2026). The Local Approach to Causal Inference under Network Interference. *Quantitative Economics*, 17, 173–199. https://doi.org/10.3982/QE2484
 
-* Lindo, J. M., Sanders, N. J., & Oreopoulos, P. (2010). [Ability, Gender, and Performance Standards: Evidence from Academic Probation](https://www.aeaweb.org/articles?id=10.1257/app.2.2.95). *American Economic Journal: Applied Economics*, 2(2), 95-117.
+This repository contains a full replication and critical assessment of the empirical application in Auerbach et al. (2026), which proposes a nonparametric framework for causal inference under network interference. The paper models each node's rooted subgraph ("local configuration") as its treatment and uses a k-nearest-neighbor estimator and permutation test to compare favor exchange outcomes across three network structures — knife (support), fork (star), and spoon (triangular clustering) — in 75 rural Karnataka villages. The headline finding is that fork→spoon rejects distributional equality at p=0.007, suggesting clustering drives favor exchange. Our notebook replicates all primary outputs exactly and then conducts three critical assessments and two independent extensions that reveal the headline result rests on degenerate matching (the spoon configuration has zero exact structural matches across all 75 villages), making the p-value highly sensitive to arbitrary tie-breaking choices.
 
-Lindo et al. (2010) examine the effects of academic probation on student outcomes using a regression discontinuity design. The analysis is based on data from a large Canadian university and evaluates whether academic probation is successful in improving the performance of low scoring students. Consistent with a model of performance standards, the authors find that being placed on probation in the first year of university induces some students to drop out of school while it improves the grades of students who continue their studies. In a more general sense, academic probation can offer insights into how agents respond to negative incentives and the threat of punishment in a real-world context.
+## Notebook
+
+**[main_project.ipynb](main_project.ipynb)** — Main submission notebook. Runs top-to-bottom using the `my-virtenv-py310` conda environment.
+
+## Analysis Sections
+
+- **Replication Results** — Exact replication of Tables 1, 2, 12, 13 and Figures 6–12; all outputs match byte-for-byte.
+- **Critical Assessment 1: Matching Quality** — Documents that the spoon configuration has zero perfect structural matches across all 75 villages, making the KNN estimator unable to condition on the clustering feature it claims to measure.
+- **Critical Assessment 2: P-value Sensitivity** — Shows the headline p=0.007 is more extreme than all 10 random tie-breaking seeds in Tables 12–13; only 4/10 seeds reject at α=0.05.
+- **Critical Assessment 3: Choice of k and q** — Demonstrates non-convergence of estimates across k and that fork=spoon is significant at only 1 of 3 reported q values (q=10), raising a multiple-comparisons concern.
+- **Extension 1: P-values Across Extended q Range** — Sweeps q ∈ {1,…,35} and finds fork=spoon significant at 6/11 values, but with a notable local dip at q=20 explained by the degenerate spoon matching.
+- **Extension 2: Full Monte Carlo over Tie-Breaking Seeds** — Runs 1000 random seeds and finds the test rejects at α=0.05 only 33.7% of the time at q=10; the paper's headline p=0.007 sits at the 6.1th percentile of the seed distribution.
+
+---
+
+*Reference example notebook (`project.ipynb`) by [Annica Gehlen](https://github.com/amageh), OSE Data Science 2019.*
