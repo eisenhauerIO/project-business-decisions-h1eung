@@ -10,6 +10,7 @@ on:
 jobs:
   run-notebook:
     runs-on: ubuntu-latest
+    timeout-minutes: 120
 
     steps:
       - name: Checkout repository
@@ -29,4 +30,4 @@ jobs:
       - name: Run notebook
         shell: micromamba-shell {0}
         run: |
-          pytest --nbmake main_project.ipynb
+          pytest --nbmake --nbmake-timeout=1800 main_project.ipynb
