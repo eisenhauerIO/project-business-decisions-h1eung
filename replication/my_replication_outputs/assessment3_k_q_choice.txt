@@ -1,37 +1,21 @@
 ========================================================================
 ASSESSMENT 3: CHOICE OF k AND q
-Auerbach, Guo, Tabord-Meehan (2026) — Empirical Application
 ========================================================================
 
 ────────────────────────────────────────────────────────────────────────
 PART A: Trending Estimates Across k (Table 2)
 ────────────────────────────────────────────────────────────────────────
 
-  Table 2 reproduces (from replicated output):
-
-  k       E[Yβ]-E[Yα] (knife→fork)        E[Yγ]-E[Yβ] (fork→spoon)
-  -----------------------------------------------------------------
+  k       E[Yb]-E[Ya] (knife->fork)       E[Yg]-E[Yb] (fork->spoon)
+  ----------------------------------------------------------------------
   10      0.24  95%CI [-0.35,0.82]        0.62  95%CI [0.21,1.03]
   20      0.11  95%CI [-0.20,0.43]        0.69  95%CI [0.44,0.95]
   30      0.07  95%CI [-0.15,0.29]        0.74  95%CI [0.55,0.94]
 
   Convergence diagnostics:
-
-  knife→fork:
-    Point estimate k=10: 0.24
-    Point estimate k=30: 0.07
-    Total shift (k=10→30): 0.17  (71% of k=10 estimate)
-    CI width at k=30:    0.44
-    Shift as % of final CI width: 39%
-    Direction: monotone decrease  (0.24 → 0.11 → 0.07)
-
-  fork→spoon:
-    Point estimate k=10: 0.62
-    Point estimate k=30: 0.74
-    Total shift (k=10→30): 0.12  (19% of k=10 estimate)
-    CI width at k=30:    0.39
-    Shift as % of final CI width: 31%
-    Direction: monotone increase  (0.62 → 0.69 → 0.74)
+  knife->fork: shift=0.17 = 71% of k=10 estimate; 39% of final CI width; monotone DECREASE
+  fork->spoon: shift=0.12 = 19% of k=10 estimate; 31% of final CI width; monotone INCREASE
+  Note: k=30 CI for fork->spoon [0.55,0.94] does NOT contain k=10 estimate (0.62) -- inconsistent with convergence
 
 ────────────────────────────────────────────────────────────────────────
 PART B: Significance as a Function of q
@@ -43,33 +27,8 @@ PART B: Significance as a Function of q
   10                1.000        no            0.007       YES       YES
   20                0.152        no            0.074        no       YES
 
-  fork=spoon significant at alpha=0.05: 1/3 q values
-  fork=spoon significant at alpha=0.10: 3/3 q values
-  knife=fork  significant at alpha=0.05: 0/3 q values
-  knife=fork  significant at alpha=0.10: 0/3 q values
+  fork=spoon significant at alpha=0.05: 1/3 q values (q=10 only)
+  Bonferroni threshold (3 tests): 5%/3 = 1.7%; q=10 (p=0.007) PASSES, q=5 and q=20 do NOT
 
-────────────────────────────────────────────────────────────────────────
-PART C: Parameter Sensitivity Summary
-────────────────────────────────────────────────────────────────────────
-
-  For fork=spoon, does the 95% CI exclude zero?
-
-  k                     95% CI   Excludes 0?
-  ------------------------------------------
-  10      [  0.21,  1.03]               YES
-  20      [  0.44,  0.95]               YES
-  30      [  0.55,  0.94]               YES
-
-  For fork=spoon, does the p-value reject H0 at alpha=0.05?
-
-  q          p-value    Rejects?
-  ------------------------------
-  5            0.062          no
-  10           0.007         YES
-  20           0.074          no
-
-  Note: 95% CIs exclude 0 at all k values, but p-values only
-  reject H0 at q=10 (of 3 q values). These are separate procedures
-  (CLT-based CI vs permutation test) with separate parameters.
-
-========================================================================
+  95% CI excludes zero at ALL 3 k values, but p-value rejects at ONLY 1/3 q values.
+  Two inference procedures for related hypotheses give inconsistent evidence.
